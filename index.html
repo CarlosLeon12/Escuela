@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuela</title>
+</head>
+
+    <style>
+/*-------------fondo de pantalla---------------------*/
+
+    body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .fullscreen-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  /*----------------------------Titulo e imagen-------------------*/
+
+  .titulo{
+    color: #ffffff;
+    font-size: 50px;
+  }
+
+  .divTitulo{
+    margin-top: 20px;
+    margin-left: 530px;
+  }
+
+  .logo{
+    height: 250px;
+    width: 250px;
+    margin-top: 15px;
+    margin-left: 720px;
+}
+
+    /*-------------campos a llenar-------------------*/
+
+    .inputNombre{
+        background-color: transparent;
+        border: 2.5px solid #ffffff;
+        color: #ffffff;
+        border-radius: 10px;
+        height: 35px;
+        width: 380px;
+        font-size: 20px;
+        margin-top: 10px;
+        margin-left: 130px;
+        text-align: center;
+    }
+
+    .labelNombre{
+        color: #ffffff;
+        margin-top: 45px;
+        margin-left: 132px;
+        font-size: 25px;
+    }
+
+    .labelApellido{
+        color: #ffffff;
+        margin-top: 45px;
+        margin-left: 304px;
+        font-size: 25px;   
+    }
+
+    .labelDocumento{
+        color: #ffffff;
+        margin-top: 45px;
+        margin-left: 304px;
+        font-size: 25px;   
+    }
+
+    .labelNacimiento{
+        font-size: 25px;
+        color: #ffffff;
+        margin-left: 655px;
+    }
+
+    .inputDate{
+        margin-left: 655px;
+        margin-top: 10px;
+        background-color: transparent;
+        border: 2.5px solid #ffffff;
+        height: 35px;
+        width: 380px;
+        font-size: 20px;
+        border-radius: 10px;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    /*-------------------------------------------------*/
+
+    </style>
+
+<body>
+    
+    <!--fondo de pantalla-->
+    <img class="fullscreen-image" src="https://th.bing.com/th/id/R.98eef5af5a19d7080845fe51311d957f?rik=Zl7Frh%2b5bpFi2w&riu=http%3a%2f%2f1.bp.blogspot.com%2f-zKX8CREi3QY%2fT2OMZgW3s6I%2fAAAAAAAAWzg%2f5sFH754c6sw%2fs1600%2fLos-mas-Hermosos-Paisajes-Naturales_04.jpg&ehk=A5duiR2F2V2mfQjbuU33wpthxZXzqvPo5UMVfvokH9Y%3d&risl=&pid=ImgRaw&r=0" alt="Imagen a pantalla completa">
+
+   
+
+    <div>
+         <!--nombre de la escuela e imagen-->
+
+        <div class="divTitulo">
+            <label class="titulo" for="">Escuela Primaria Apachurralos</label>
+        </div>
+
+        <div>
+            <img class="logo" src="imagenes/logo.png" alt="">
+        </div>
+    
+        <!--campos para llenar los datos del alumno-->
+
+        <div style="margin-top: 50px;">
+            <label class="labelNombre" for="">Nombres del Alumno</label>
+            <label class="labelApellido" for="">Apellidos del Alumno</label>
+            <label class="labelDocumento" for="">No. CUI</label>
+        </div>
+        
+        <div>
+                
+                <input class="inputNombre" type="text">
+                <input class="inputNombre" type="text">
+                <input class="inputNombre" type="number">
+
+        </div>
+
+        <div style="margin-top: 40px;">
+            <label class="labelNombre" for="">Nombre de Encargado</label>
+            <label style="margin-left: 295px; color: #ffffff; font-size: 25px;" for="">No. Tel. Encargado</label>
+            <label style="margin-left: 325px; color: #ffffff; font-size: 25px;" for="">Direccion</label>
+        </div>
+        
+        <div>
+                
+                <input class="inputNombre" type="text">
+                <input class="inputNombre" type="number">
+                <input class="inputNombre" type="text">
+
+        </div>
+
+        <div style="margin-top: 40px;">
+            <label class="labelNacimiento" for="">Fecha de Nacimiento</label>
+        </div>
+        
+        <div>
+            <input class="inputDate" type="date">
+        </div>
+        
+
+    </div>
+
+</body>
+</html>
